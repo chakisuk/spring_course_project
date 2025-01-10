@@ -29,8 +29,13 @@ public class CourseController {
 
         System.out.println(user_idx);
 
-        List<Subject> availableSubjects=courseService.getUserCourses(user_idx);
-        model.addAttribute("availableSubjects", availableSubjects);
+        List<Subject> subjects = courseService.getAllCourses();
+        model.addAttribute("subjects", subjects);
+
+
+
+        List<Subject> select_courses=courseService.getUserCourses(user_idx);
+        model.addAttribute("select_courses", select_courses);
 
         return "main";
     }
