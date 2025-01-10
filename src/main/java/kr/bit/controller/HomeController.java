@@ -19,11 +19,6 @@ public class HomeController {
     //http://localhost:8080/url_mapping/
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(){  //핸들러 메소드
-        return "redirect:/login"; //login.jsp를 첫 화면으로
-    }
-
-    @GetMapping("/login")
-    public String main(){
-        return "login";
+        return "redirect:user/login"; //login.jsp를 첫 화면으로
     }
 }

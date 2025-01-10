@@ -19,4 +19,10 @@ public class User {
     @Size(min = 4, max = 10)
     @Pattern(regexp = "[a-zA-Z0-9]*")
     private String user_pw;
+
+    private boolean userLogin;
+
+    public User() {
+        this.userLogin=false;  //로그인 여부 -> 로그인 안되어있는 걸로 초기화
+    }
 }
