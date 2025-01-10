@@ -19,5 +19,4 @@ public class User {
     @Size(min = 4, max = 10)
     @Pattern(regexp = "[a-zA-Z0-9]*")
     private String user_pw;
-
 }
