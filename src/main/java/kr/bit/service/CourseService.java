@@ -20,4 +20,9 @@ public class CourseService {
     public List<Subject> getUserCourses(int user_idx) {
         return courseDao.getUserCourses(user_idx);
     }
+
+    public List<Subject> getAllCourses() {
+        return courseDao.getAllCourses();
+    }
+
 }

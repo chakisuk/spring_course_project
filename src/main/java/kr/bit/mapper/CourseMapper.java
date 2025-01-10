@@ -13,6 +13,9 @@ public interface CourseMapper {
     @Delete("delete from course_table where user_idx=#{user_idx} and subject_idx=#{subject_idx}")
     void deleteCourse(int user_idx, int subject_idx);
 
+    @Select("select * from subject_table")
+    List<Subject> getAllCourses();
+
     // 사용자 수강 과목 목록 가져오기(user_idx 기준으로 가져옴)
     @Select("SELECT s.* FROM subject_table s " +
             "JOIN course_table c ON s.subject_idx = c.subject_idx " +

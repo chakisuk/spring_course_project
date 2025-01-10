@@ -2,6 +2,7 @@ package kr.bit.config;
 
 
 import kr.bit.mapper.CourseMapper;
+import kr.bit.mapper.UserMapper;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -71,6 +72,14 @@ public class ServletAppContext implements WebMvcConfigurer {
     @Bean
     public MapperFactoryBean<CourseMapper> course_mapper(SqlSessionFactory factory) throws Exception {
         MapperFactoryBean<CourseMapper> fac = new MapperFactoryBean<CourseMapper>(CourseMapper.class);
+
+        fac.setSqlSessionFactory(factory);
+        return fac;
+    }
+
+    @Bean
+    public MapperFactoryBean<UserMapper> user_mapper(SqlSessionFactory factory) throws Exception {
+        MapperFactoryBean<UserMapper> fac = new MapperFactoryBean<UserMapper>(UserMapper.class);
 
         fac.setSqlSessionFactory(factory);
         return fac;

@@ -2,8 +2,7 @@
          pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<c:set var="root" value="${pageContext.request.contextPath}/" />
-<head>
+<c:set var="root" value="${pageContext.request.contextPath}/" /><head>
     <title>0110_3팀</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery-3.3.1/jquery.min.js"></script>
@@ -18,32 +17,33 @@
 <%--        <c:if test="${fail==true}">--%>
 <%--            <div class="alert alert-danger">--%>
 <%--                <h2>로그인 실패</h2>--%>
-<%--                <p>아이디랑 비밀번호 확인해라</p>--%>
+<%--       
+        <p>아이디랑 비밀번호 확인해라</p>--%>
 <%--            </div>--%>
 <%--        </c:if>--%>
 
-        <form method="post" action="login_pro.jsp">
-<%--        <form:form action="${root}user/login_pro" method="post" modelAttribute="loginProBean">--%>
+        <form:form method="post" action="${root}user/login_pro" modelAttribute="loginProBean">
+            <form:hidden path="user_idx"/>
             <div class="form-group">
-                <label>아이디</label>
-                <input type="text" id="user_id" class="form-control"/>
+                <form:label path="user_id">아이디</form:label>
+                <form:input type="text" path="user_id" class="form-control"/>
 <%--                <form:label path="user_id">아이디</form:label>--%>
 <%--                <form:input type="text" path="user_id" class="form-control"/>--%>
 <%--                <form:errors path="user_id" style='color:red'/>--%>
             </div>
             <div class="form-group">
-                <label>비밀번호</label>
-                <input type="password" id="user_pw" class="form-control"/>
+                <form:label path="user_pw">비밀번호</form:label>
+                <form:input type="password" path="user_pw" class="form-control"/>
 <%--                <form:label path="user_pw">비밀번호</form:label>--%>
 <%--                <form:password path="user_pw" class="form-control"/>--%>
 <%--                <form:errors path="user_pw" style='color:red'/>--%>
             </div>
             <div class="form-group">
                 <div class="text-right">
-                    <button class="btn btn primary">로그인</button>
+                    <form:button class="btn btn primary">로그인</form:button>
                 </div>
             </div>
-        </form>
+        </form:form>
 <%--        </form:form>--%>
 
     </div>

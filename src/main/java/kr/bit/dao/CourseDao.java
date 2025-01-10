@@ -21,5 +21,10 @@ public class CourseDao {
         return courseMapper.getUserCourses(user_idx);
     }
 
+    //전체
+    public List<Subject> getAllCourses() {
+        return courseMapper.getAllCourses();
+    }
+
 
 }
