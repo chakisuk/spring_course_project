@@ -12,34 +12,7 @@
 </head>
 <body>
 
-<div class="container">
-    <div class="card-body">
-        <c:if test="${fail==true}">
-            <div class="alert alert-danger">
-                <h2>로그인 실패</h2>
-                <p>아이디랑 비밀번호 확인해라</p>
-            </div>
-        </c:if>
-        <form:form action="${root}user/login_pro" method="post" modelAttribute="loginProBean">
-            <div class="form-group">
-                <form:label path="user_id">아이디</form:label>
-                <form:input type="text" path="user_id" class="form-control"/>
-                <form:errors path="user_id" style='color:red'/>
-            </div>
-            <div class="form-group">
-                <form:label path="user_pw">비밀번호</form:label>
-                <form:password path="user_pw" class="form-control"/>
-                <form:errors path="user_pw" style='color:red'/>
-            </div>
-            <div class="form-group">
-                <div class="text-right">
-                    <form:button class="btn btn primary">로그인</form:button>
-                </div>
-            </div>
-
-        </form:form>
-    </div>
-</div>
+login
 
 </body>
 </html>
