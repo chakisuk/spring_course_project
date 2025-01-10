@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <c:set var="root" value="${pageContext.request.contextPath}/" />
 <!DOCTYPE html>
 <html>
@@ -9,7 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 <body>
-
+${param.user_idx}
 <div class="container mt-4">
     <div class="card">
         <div class="card-header">
@@ -36,15 +37,18 @@
                         <td>${subject.subject_grade}</td>
                         <td>${subject.subject_count}/20</td>
                         <td>${subject.subject_day}</td>
-                        <td>${subject.subject_time}</td>
+                        <td>${subject.subject_time}</td>${subject.user_ids}
                         <c:if test="${subject.subject_count lt 20}">
+                        <c:if test="${not fn:contains(subject.user_ids, param.user_idx)}">
                         <td>
-                            <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청
-                            </a>
-                        </td>
+                                <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청
+                                </a>
+                            </td>
+                        </c:if>
                         </c:if>
                     </tr>
                 </c:forEach>
+
                 </tbody>
             </table>
         </div>

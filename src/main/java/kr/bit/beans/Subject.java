@@ -8,8 +8,20 @@ public class Subject {
     private int subject_num;
     private String subject_day;
     private String subject_time;
+    private String user_ids;
+
+    public String getUser_ids() {
+        return user_ids;
+    }
+
+    public void setUser_ids(String user_ids) {
+        this.user_ids = user_ids;
+    }
+
 
     private int subject_count;
+
+
 
     public int getSubject_count() {
         return subject_count;

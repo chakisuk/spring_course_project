@@ -21,7 +21,8 @@ public interface CourseMapper {
     @Update("update subject_table set subject_num = subject_num + 1 where subject_idx = #{subject_idx}")
     void addSubjectNum(@Param("subject_idx") int subject_idx);
 
-    @Select("SELECT s.subject_idx AS subject_idx, s.subject_name, COUNT(c.subject_idx) AS subject_count, s.subject_grade, s.subject_day, s.subject_time " +
+    @Select("SELECT s.subject_idx AS subject_idx, s.subject_name, COUNT(c.subject_idx) AS subject_count, " +
+            "s.subject_grade, s.subject_day, s.subject_time, GROUP_CONCAT(c.user_idx) AS user_ids " +
             "FROM subject_table s LEFT JOIN course_table c ON s.subject_idx = c.subject_idx " +
             "GROUP BY s.subject_idx, s.subject_name, s.subject_grade, s.subject_day, s.subject_time")
     List<Subject> getAllCourses();
