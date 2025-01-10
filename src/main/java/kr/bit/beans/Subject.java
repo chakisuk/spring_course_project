@@ -9,6 +9,16 @@ public class Subject {
     private String subject_day;
     private String subject_time;
 
+    private int subject_count;
+
+    public int getSubject_count() {
+        return subject_count;
+    }
+
+    public void setSubject_count(int subject_count) {
+        this.subject_count = subject_count;
+    }
+
     public int getSubject_idx() {
         return subject_idx;
     }

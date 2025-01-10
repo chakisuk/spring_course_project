@@ -34,7 +34,7 @@
                         <td>${subject.subject_idx}</td>
                         <td>${subject.subject_name}</td>
                         <td>${subject.subject_grade}</td>
-                        <td>${subject.subject_num}/20</td>
+                        <td>${subject.subject_count}/20</td>
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>
@@ -71,7 +71,7 @@
                         <td>${subject.subject_idx}</td>
                         <td>${subject.subject_name}</td>
                         <td>${subject.subject_grade}</td>
-                        <td>${subject.subject_num}/20</td>
+                        <td>${subject.subject_count}/20</td>
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>

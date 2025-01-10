@@ -21,13 +21,16 @@ public interface CourseMapper {
     @Update("update subject_table set subject_num = subject_num + 1 where subject_idx = #{subject_idx}")
     void addSubjectNum(@Param("subject_idx") int subject_idx);
 
-    @Select("select * from subject_table")
+    @Select("SELECT s.subject_idx AS subject_idx, s.subject_name, COUNT(c.subject_idx) AS subject_count, s.subject_grade, s.subject_day, s.subject_time " +
+            "FROM subject_table s LEFT JOIN course_table c ON s.subject_idx = c.subject_idx " +
+            "GROUP BY s.subject_idx, s.subject_name, s.subject_grade, s.subject_day, s.subject_time")
     List<Subject> getAllCourses();
 
     // 사용자 수강 과목 목록 가져오기(user_idx 기준으로 가져옴)
-    @Select("SELECT s.* FROM subject_table s " +
-            "JOIN course_table c ON s.subject_idx = c.subject_idx " +
-            "WHERE c.user_idx = #{user_idx}")
+    @Select("SELECT s.subject_idx, s.subject_name, (SELECT COUNT(*) FROM course_table c2 WHERE c2.subject_idx = s.subject_idx) AS subject_count, " +
+            "s.subject_grade, s.subject_day, s.subject_time FROM subject_table s " +
+            "JOIN course_table c ON c.subject_idx = s.subject_idx AND c.user_idx =#{user_idx} " +
+            "GROUP BY s.subject_idx, s.subject_name, s.subject_grade, s.subject_day, s.subject_time")
     List<Subject> getUserCourses(int user_idx);
 
 
