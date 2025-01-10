@@ -37,10 +37,12 @@
                         <td>${subject.subject_count}/20</td>
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
+                        <c:if test="${subject.subject_count lt 20}">
                         <td>
                             <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청
                             </a>
                         </td>
+                        </c:if>
                     </tr>
                 </c:forEach>
                 </tbody>
