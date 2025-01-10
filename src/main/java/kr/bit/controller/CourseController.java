@@ -7,11 +7,10 @@ import kr.bit.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -48,12 +47,22 @@ public class CourseController {
         // 신청과목 삭제
         courseService.deleteCourse(user_idx, subject_idx);
 
-        // 삭제 후 사용자가 신청해둔 목록들 새로 list에 담기
-        List<Subject> remainingCourses = courseService.getUserCourses(user_idx);
+        model.addAttribute("user_idx", user_idx);
 
-        // 담은거 모델에 추가
-        model.addAttribute("remainSubjects", remainingCourses);
 
-        return "main";
+        return "user/delete";
+    }
+
+    @GetMapping("/add")
+    public String add(@RequestParam("user_idx") int user_idx,
+                      @RequestParam("subject_idx") int subject_idx,
+                      Model model) {
+
+        // 과목 신청
+        courseService.addCourse(user_idx, subject_idx);
+
+        model.addAttribute("user_idx", user_idx);
+
+        return "user/add";
     }
 }
