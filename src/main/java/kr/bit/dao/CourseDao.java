@@ -1,8 +1,11 @@
 package kr.bit.dao;
 
+import kr.bit.beans.Subject;
 import kr.bit.mapper.CourseMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
 
 @Repository
 public class CourseDao {
@@ -12,6 +15,10 @@ public class CourseDao {
 
     public void deleteCourse(int user_idx, int subject_idx) {
         courseMapper.deleteCourse(user_idx, subject_idx);
+    }
+
+    public List<Subject> getUserCourses(int user_idx) {
+        return courseMapper.getUserCourses(user_idx);
     }
 
 
