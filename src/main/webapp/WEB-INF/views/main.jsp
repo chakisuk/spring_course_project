@@ -29,7 +29,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="subject" items="${availableSubjects}">
+                <c:forEach var="subject" items="${subjects}">
                     <tr>
                         <td>${subject.subject_idx}</td>
                         <td>${subject.subject_name}</td>
@@ -67,7 +67,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="subject" items="${registeredSubjects}">
+                <c:forEach var="subject" items="${select_courses}">
                     <tr>
                         <td>${subject.subject_idx}</td>
                         <td>${subject.subject_name}</td>
