@@ -2,7 +2,7 @@
          pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<c:set var="root" value="${pageContext.request.contextPath}/" />
+<c:url value="/" var="root"/>
 <head>
     <title>0110_3팀</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -18,7 +18,8 @@
 <%--        <c:if test="${fail==true}">--%>
 <%--            <div class="alert alert-danger">--%>
 <%--                <h2>로그인 실패</h2>--%>
-<%--                <p>아이디랑 비밀번호 확인해라</p>--%>
+<%--       
+        <p>아이디랑 비밀번호 확인해라</p>--%>
 <%--            </div>--%>
 <%--        </c:if>--%>
 
