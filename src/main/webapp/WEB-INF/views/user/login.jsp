@@ -23,7 +23,7 @@
 <%--        </c:if>--%>
 
         <form:form method="post" action="${root}user/login_pro" modelAttribute="loginProBean">
-<%--        <form:form action="${root}user/login_pro" method="post" modelAttribute="loginProBean">--%>
+            <form:hidden path="user_idx"/>
             <div class="form-group">
                 <form:label path="user_id">아이디</form:label>
                 <form:input type="text" path="user_id" class="form-control"/>

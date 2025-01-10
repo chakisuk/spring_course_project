@@ -31,7 +31,8 @@ public class UserController {
     }
 
     @PostMapping("/login_pro")
-    public String login_pro(@Valid @ModelAttribute("loginProBean") User loginProBean, BindingResult result) {
+    public String login_pro(@Valid @ModelAttribute("loginProBean") User loginProBean,
+                            BindingResult result){
         if(result.hasErrors()) {
             return "user/login";
         }
