@@ -24,6 +24,17 @@ public class CourseController {
     @Resource(name = "loginBean")
     private User loginBean;
 
+    @GetMapping("/main")
+    public String main(@RequestParam("user_idx") int user_idx, Model model) {
+
+        System.out.println(user_idx);
+
+        List<Subject> availableSubjects=courseService.getUserCourses(user_idx);
+        model.addAttribute("availableSubjects", availableSubjects);
+
+        return "main";
+    }
+
     @GetMapping("/delete")
     public String delete(@RequestParam("user_idx") int user_idx,
                          @RequestParam("subject_idx") int subject_idx,
