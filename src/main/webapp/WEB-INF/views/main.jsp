@@ -64,6 +64,7 @@
                     <th>수강인원</th>
                     <th>강의요일</th>
                     <th>강의시간</th>
+                    <th>수강신청</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -75,6 +76,12 @@
                         <td>${subject.subject_num}/20</td>
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
+                        <td>
+                            <form action="${root}subject/register" method="post">
+                                <input type="hidden" name="subject_idx" value="${subject.subject_idx}">
+                                <button type="submit" class="btn btn-danger">취소</button>
+                            </form>
+                        </td>
                     </tr>
                 </c:forEach>
                 </tbody>
