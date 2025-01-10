@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c757545-ea6b-4224-b23b-9db75ce3bf29" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/subjectMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/subjectMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login_success.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +119,7 @@
       <option name="presentableId" value="Default" />
       <updated>1736479006622</updated>
       <workItem from="1736479007592" duration="11264000" />
-      <workItem from="1736492109524" duration="5009000" />
+      <workItem from="1736492109524" duration="13886000" />
     </task>
     <servers />
   </component>

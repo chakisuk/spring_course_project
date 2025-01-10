@@ -9,6 +9,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 @Controller
@@ -32,7 +33,12 @@ public class UserController {
 
     @PostMapping("/login_pro")
     public String login_pro(@Valid @ModelAttribute("loginProBean") User loginProBean,
-                            BindingResult result){
+                            BindingResult result, Model model, HttpSession session){
+
+        System.out.println(loginProBean.getUser_idx()); // 0
+        System.out.println(loginProBean.getUser_id()); // student
+        System.out.println(loginProBean.getUser_pw()); // student
+
         if(result.hasErrors()) {
             return "user/login";
         }
@@ -40,6 +46,9 @@ public class UserController {
         userService.getLoginUser(loginProBean);
 
         if(loginBean.isUserLogin()==true) {
+            model.addAttribute("user_idx", loginBean.getUser_idx());
+            System.out.println(loginBean.getUser_idx());
+
             return "user/login_success";
         } else {
             return "user/login_fail";

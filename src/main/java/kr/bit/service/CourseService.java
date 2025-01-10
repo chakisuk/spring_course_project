@@ -17,6 +17,10 @@ public class CourseService {
         courseDao.deleteCourse(user_idx, subject_idx);
     }
 
+    public void addCourse(int user_idx, int subject_idx) {
+        courseDao.addCourse(user_idx, subject_idx);
+    }
+
     public List<Subject> getUserCourses(int user_idx) {
         return courseDao.getUserCourses(user_idx);
     }
