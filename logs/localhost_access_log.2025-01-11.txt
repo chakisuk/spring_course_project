@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:10:25 +0900] "GET /Spring1 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:10:25 +0900] "GET /Spring1/ HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:10:27 +0900] "GET /Spring1/user/login HTTP/1.1" 200 1363
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:17 +0900] "POST /Spring1/user/login_pro HTTP/1.1" 200 194
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:18 +0900] "GET /Spring1/user/login?fail=true HTTP/1.1" 200 1363
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:24 +0900] "POST /Spring1/user/login_pro HTTP/1.1" 200 1463
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:31 +0900] "POST /Spring1/user/login_pro HTTP/1.1" 200 162
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:32 +0900] "GET /Spring1/main?user_idx=1 HTTP/1.1" 200 5090
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:36 +0900] "GET /Spring1/delete?subject_idx=4&user_idx=1 HTTP/1.1" 200 649
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:39 +0900] "GET /Spring1/main?user_idx=1 HTTP/1.1" 200 4529
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:40 +0900] "GET /Spring1/add?subject_idx=4&user_idx=1 HTTP/1.1" 200 655
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:42 +0900] "GET /Spring1/main?user_idx=1 HTTP/1.1" 200 5090

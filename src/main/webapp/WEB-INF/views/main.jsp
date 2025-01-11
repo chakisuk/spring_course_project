@@ -10,31 +10,31 @@
 </head>
 <body>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        let enroll_btns = document.querySelectorAll('.enroll_btn');
+<%--<script>--%>
+<%--    document.addEventListener('DOMContentLoaded', function() {--%>
+<%--        let enroll_btns = document.querySelectorAll('.enroll_btn');--%>
 
-        enroll_btns.forEach(function(enroll_btn) {
-            let row = enroll_btn.parentElement.parentElement; // 버튼 -> td -> tr로 올라감
-            let enroll_num = row.querySelector('td:nth-child(4)'); // 수강인원 수 받아오기
-            let currentNum = parseInt(enroll_num.textContent.split('/')[0]); // xx/20 형식이니까 앞에 숫자만 추출
+<%--        enroll_btns.forEach(function(enroll_btn) {--%>
+<%--            let row = enroll_btn.parentElement.parentElement; // 버튼 -> td -> tr로 올라감--%>
+<%--            let enroll_num = row.querySelector('td:nth-child(4)'); // 수강인원 수 받아오기--%>
+<%--            let currentNum = parseInt(enroll_num.textContent.split('/')[0]); // xx/20 형식이니까 앞에 숫자만 추출--%>
 
-            if(currentNum >= 20) {
-                enroll_btn.classList.remove('btn-primary');
-                enroll_btn.classList.add('btn-secondary');
-                enroll_btn.textContent = "마감";
-                enroll_btn.style.pointerEvents = 'none';
-                return false;
-            } else {
-                enroll_btn.classList.remove('btn-secondary');
-                enroll_btn.classList.add('btn-primary');
-                enroll_btn.textContent = "신청";
-                return true;
-            }
-        });
-    });
+<%--            if(currentNum >= 20) {--%>
+<%--                enroll_btn.classList.remove('btn-primary');--%>
+<%--                enroll_btn.classList.add('btn-secondary');--%>
+<%--                enroll_btn.textContent = "마감";--%>
+<%--                enroll_btn.style.pointerEvents = 'none';--%>
+<%--                return false;--%>
+<%--            } else {--%>
+<%--                enroll_btn.classList.remove('btn-secondary');--%>
+<%--                enroll_btn.classList.add('btn-primary');--%>
+<%--                enroll_btn.textContent = "신청";--%>
+<%--                return true;--%>
+<%--            }--%>
+<%--        });--%>
+<%--    });--%>
 
-</script>
+<%--</script>--%>
 
 <div class="container mt-4">
     <div class="card">
@@ -64,8 +64,14 @@
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>
-                            <a class="btn btn-primary enroll_btn" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청
-                            </a>
+                            <c:choose>
+                                <c:when test="${subject.subject_num >= 20}">
+                                    <a class="btn btn-secondary" href="javascript:void(0)" style="pointer-events: none">마감</a>
+                                </c:when>
+                                <c:otherwise>
+                                    <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청</a>
+                                </c:otherwise>
+                            </c:choose>
                         </td>
                     </tr>
                 </c:forEach>
