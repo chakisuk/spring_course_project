@@ -49,12 +49,22 @@
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>
+                            <c:set var="isEnrolled" value="false" />
+                            <c:forEach var="selected" items="${select_courses}">
+                                <c:if test="${selected.subject_idx == subject.subject_idx}">
+                                    <c:set var="isEnrolled" value="true" />
+                                </c:if>
+                            </c:forEach>
+
                             <c:choose>
-                                <c:when test="${subject.subject_num >= 20}">
-                                    <button class="btn btn-secondary" disabled>인원마감</button>
+                                <c:when test="${isEnrolled}">
+                                    <button class="btn btn-secondary" disabled>신청</button>
+                                </c:when>
+                                <c:when test="${subject.subject_num < 20}">
+                                    <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청</a>
                                 </c:when>
                                 <c:otherwise>
-                                    <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청</a>
+                                    <button class="btn btn-secondary" disabled>인원마감</button>
                                 </c:otherwise>
                             </c:choose>
                         </td>
