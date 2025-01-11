@@ -31,4 +31,7 @@ public interface CourseMapper {
     List<Subject> getUserCourses(int user_idx);
 
 
+    @Select("SELECT * FROM subject_table WHERE subject_idx = #{subject_idx}")
+    Subject getSubjectByIdx(int subject_idx);
+
 }

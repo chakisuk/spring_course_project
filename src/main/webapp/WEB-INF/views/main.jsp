@@ -7,34 +7,19 @@
     <meta charset="UTF-8">
     <title>수강신청</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <style>
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
 
-<%--<script>--%>
-<%--    document.addEventListener('DOMContentLoaded', function() {--%>
-<%--        let enroll_btns = document.querySelectorAll('.enroll_btn');--%>
-
-<%--        enroll_btns.forEach(function(enroll_btn) {--%>
-<%--            let row = enroll_btn.parentElement.parentElement; // 버튼 -> td -> tr로 올라감--%>
-<%--            let enroll_num = row.querySelector('td:nth-child(4)'); // 수강인원 수 받아오기--%>
-<%--            let currentNum = parseInt(enroll_num.textContent.split('/')[0]); // xx/20 형식이니까 앞에 숫자만 추출--%>
-
-<%--            if(currentNum >= 20) {--%>
-<%--                enroll_btn.classList.remove('btn-primary');--%>
-<%--                enroll_btn.classList.add('btn-secondary');--%>
-<%--                enroll_btn.textContent = "마감";--%>
-<%--                enroll_btn.style.pointerEvents = 'none';--%>
-<%--                return false;--%>
-<%--            } else {--%>
-<%--                enroll_btn.classList.remove('btn-secondary');--%>
-<%--                enroll_btn.classList.add('btn-primary');--%>
-<%--                enroll_btn.textContent = "신청";--%>
-<%--                return true;--%>
-<%--            }--%>
-<%--        });--%>
-<%--    });--%>
-
-<%--</script>--%>
+<div class="logout-btn">
+    <a href="${root}user/logout" class="btn btn-danger">로그아웃</a>
+</div>
 
 <div class="container mt-4">
     <div class="card">
@@ -66,7 +51,7 @@
                         <td>
                             <c:choose>
                                 <c:when test="${subject.subject_num >= 20}">
-                                    <a class="btn btn-secondary" href="javascript:void(0)" style="pointer-events: none">마감</a>
+                                    <button class="btn btn-secondary" disabled>인원마감</button>
                                 </c:when>
                                 <c:otherwise>
                                     <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청</a>
@@ -107,9 +92,7 @@
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>
-                            <a class="btn btn-danger"
-                               href="${root}delete?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}"
-                            >취소</a>
+                            <a class="btn btn-danger" href="${root}delete?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">취소</a>
                         </td>
                     </tr>
                 </c:forEach>
@@ -118,8 +101,6 @@
         </div>
     </div>
 </div>
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
