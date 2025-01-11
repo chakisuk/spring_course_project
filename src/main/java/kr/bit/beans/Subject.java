@@ -1,13 +1,13 @@
 package kr.bit.beans;
 
 public class Subject {
+
     private int subject_idx;
     private String subject_name;
     private int subject_grade;
     private int subject_num;
     private String subject_day;
     private String subject_time;
-
 
     public int getSubject_idx() {
         return subject_idx;

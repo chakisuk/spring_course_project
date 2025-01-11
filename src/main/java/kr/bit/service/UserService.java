@@ -15,7 +15,7 @@ public class UserService {
 
     @Resource(name = "loginBean") //RootAppContext - 세션영역에 설정한 빈 이름과 같기 때문에 주소값 자동주입 됨!!!!!!!!!!!
     private User loginBean;
-                                    // user_idx = 1
+    // user_idx = 1
     public void getLoginUser(User loginProBean){
         User loginProBean2 = userDao.getLoginUser(loginProBean);
 

@@ -5,12 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c757545-ea6b-4224-b23b-9db75ce3bf29" name="변경" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add_fail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/delete.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/Catalina/localhost/Spring1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/catalina.2025-01-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/host-manager.2025-01-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/localhost.2025-01-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/localhost_access_log.2025-01-10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/manager.2025-01-10.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Subject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/config/RootAppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/config/RootAppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/config/ServletAppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/config/ServletAppContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/config/SpringConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/config/SpringConfigClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/CourseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/SubjectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/SubjectDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/subjectMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/SubjectService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/db.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/error.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/error.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +55,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JUYOUNG34&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/chakisuk/spring_course_project.git&quot;,
+    &quot;accountId&quot;: &quot;40826357-8e7b-44f4-b036-f53874db34bf&quot;
+  }
+}</component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -47,9 +87,13 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Smart Tomcat.course_project.executor": "Run",
-    "git-widget-placeholder": "kisuk",
+    "Smart Tomcat.이름이 지정되지 않았습니다.executor": "Run",
+    "git-widget-placeholder": "juyoung",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/spring_course_project/src/main/webapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,29 +106,31 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="kr.bit.config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\study\spring\spring_course_project\src\main\webapp\WEB-INF\views\user" />
       <recent name="F:\study\spring\spring_course_project\src\main\webapp\WEB-INF\views" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="course_project" type="com.poratu.idea.plugins.tomcat">
+    <configuration name="이름이 지정되지 않았습니다" type="com.poratu.idea.plugins.tomcat" nameIsGenerated="true">
       <predefined_log_file enabled="true" id="Tomcat Localhost Log" />
       <predefined_log_file enabled="true" id="Tomcat Access Log" />
       <predefined_log_file id="Tomcat Catalina Log" />
       <predefined_log_file id="Tomcat Manager Log" />
       <predefined_log_file id="Tomcat Host Manager Log" />
-      <option name="catalinaBase" value="C:\Users\82106\.SmartTomcat\spring_course_project\spring_course_project" />
-      <option name="contextPath" value="/spring_course_project" />
+      <option name="adminPort" value="8006" />
+      <option name="catalinaBase" value="C:\Users\JUYOUNG\.SmartTomcat\spring_course_project\Spring1" />
+      <option name="contextPath" value="/Spring1" />
       <option name="docBase" value="$PROJECT_DIR$/src/main/webapp" />
-      <option name="envOptions">
-        <map />
-      </option>
       <option name="extraClassPath" value="" />
+      <option name="port" value="8081" />
       <option name="tomcatInfo">
         <TomcatInfo>
           <option name="name" value="Apache Tomcat/9.0.98" />
-          <option name="path" value="$USER_HOME$/Downloads/apache-tomcat-9.0.98" />
+          <option name="path" value="$PROJECT_DIR$/../Users/apache-tomcat-9.0.98" />
           <option name="version" value="9.0.98.0" />
         </TomcatInfo>
       </option>
@@ -98,8 +144,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
       </set>
     </attachedChunks>
   </component>
@@ -113,6 +159,9 @@
       <updated>1736479006622</updated>
       <workItem from="1736479007592" duration="11264000" />
       <workItem from="1736492109524" duration="5009000" />
+      <workItem from="1736498371735" duration="8809000" />
+      <workItem from="1736559477931" duration="277000" />
+      <workItem from="1736559968652" duration="5259000" />
     </task>
     <servers />
   </component>

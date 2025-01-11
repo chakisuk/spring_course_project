@@ -38,10 +38,14 @@
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>
-                            <form action="${root}subject/register" method="post">
-                                <input type="hidden" name="subject_idx" value="${subject.subject_idx}">
-                                <button type="submit" class="btn btn-primary btn-sm">신청</button>
-                            </form>
+                            <c:choose>
+                                <c:when test="${subject.subject_num >= 20}">
+                                    <button class="btn btn-secondary" disabled>인원마감</button>
+                                </c:when>
+                                <c:otherwise>
+                                    <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청</a>
+                                </c:otherwise>
+                            </c:choose>
                         </td>
                     </tr>
                 </c:forEach>
@@ -77,10 +81,7 @@
                         <td>${subject.subject_day}</td>
                         <td>${subject.subject_time}</td>
                         <td>
-                            <form action="${root}subject/register" method="post">
-                                <input type="hidden" name="subject_idx" value="${subject.subject_idx}">
-                                <button type="submit" class="btn btn-danger">취소</button>
-                            </form>
+                            <a class="btn btn-danger" href="${root}delete?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">취소</a>
                         </td>
                     </tr>
                 </c:forEach>
@@ -89,8 +90,6 @@
         </div>
     </div>
 </div>
-
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
