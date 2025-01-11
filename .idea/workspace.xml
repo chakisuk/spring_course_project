@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7885a758-8451-49c0-b7e8-3cfdcb42ebd3" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/logout.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/catalina.2025-01-11.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/catalina.2025-01-11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/localhost.2025-01-11.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/localhost.2025-01-11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/localhost_access_log.2025-01-11.txt" beforeDir="false" afterPath="$PROJECT_DIR$/logs/localhost_access_log.2025-01-11.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/main_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/main_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/add_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/add_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/delete_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/delete_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/login_005ffail_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/login_005ffail_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/login_005fsuccess_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/login_005fsuccess_jsp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/login_jsp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/work/Catalina/localhost/Spring1/org/apache/jsp/WEB_002dINF/views/user/login_jsp.java" beforeDir="false" />
-    </list>
+    <list default="true" id="7885a758-8451-49c0-b7e8-3cfdcb42ebd3" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
