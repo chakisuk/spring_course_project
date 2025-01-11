@@ -19,13 +19,13 @@
             <div class="form-group">
                 <form:label path="user_id">아이디</form:label>
                 <form:input type="text" path="user_id" class="form-control"/>
+                <form:errors path="user_id" cssStyle="color: red"/>
             </div>
 
             <div class="form-group">
                 <form:label path="user_pw">비밀번호</form:label>
                 <form:input type="password" path="user_pw" class="form-control"/>
-            </div>
-
+                <form:errors path="user_pw" cssStyle="color: red"/>
             <div class="form-group">
                 <div class="text-right">
                     <form:button class="btn btn primary">로그인</form:button>
