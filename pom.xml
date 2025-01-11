@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>kr.bit</groupId>
-    <artifactId>Spring1</artifactId>
+    <artifactId>spring_course_project</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <!-- XML에서 사용할 속성들 -->

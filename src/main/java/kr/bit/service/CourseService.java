@@ -29,4 +29,8 @@ public class CourseService {
         return courseDao.getAllCourses();
     }
 
+    public Subject getSubjectByIdx(int subject_idx) {
+        return courseDao.getSubjectByIdx(subject_idx);
+    }
+
 }

@@ -10,3 +10,7 @@
 0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:39 +0900] "GET /Spring1/main?user_idx=1 HTTP/1.1" 200 4529
 0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:40 +0900] "GET /Spring1/add?subject_idx=4&user_idx=1 HTTP/1.1" 200 655
 0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:11:42 +0900] "GET /Spring1/main?user_idx=1 HTTP/1.1" 200 5090
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:26:17 +0900] "GET /spring_course_project HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:26:20 +0900] "GET /spring_course_project/main?user_idx=1 HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:26:22 +0900] "GET /spring_course_project HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [11/Jan/2025:16:26:23 +0900] "GET /spring_course_project HTTP/1.1" 404 721
