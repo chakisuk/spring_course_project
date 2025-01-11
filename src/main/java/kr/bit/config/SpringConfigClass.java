@@ -34,4 +34,5 @@ public class SpringConfigClass extends AbstractAnnotationConfigDispatcherServlet
         return new Filter[] {encodingFilter};
 
     }
+
 }

@@ -1,5 +1,6 @@
 package kr.bit.dao;
 
+
 import kr.bit.beans.User;
 import kr.bit.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,4 +16,6 @@ public class UserDao {
     public User getLoginUser(User loginProBean){
         return userMapper.getLoginUser(loginProBean);
     }
+
+
 }

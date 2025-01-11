@@ -16,6 +16,8 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.*;
 
+import java.util.Locale;
+
 
 @Configuration
 @EnableWebMvc
@@ -91,13 +93,14 @@ public class ServletAppContext implements WebMvcConfigurer {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
-    //    properties파일에 있는 값을 뷰에 출력하기 위해서
-    @Bean(name = "messageSource")
+    @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource res = new ReloadableResourceBundleMessageSource();
-        res.setBasenames("/WEB-INF/properties/error");
+
+        res.setBasenames("classpath:/WEB-INF/properties/error");
         res.setDefaultEncoding("UTF-8");
+        res.setFallbackToSystemLocale(false);
+        res.setCacheSeconds(0);
         return res;
     }
-
 }

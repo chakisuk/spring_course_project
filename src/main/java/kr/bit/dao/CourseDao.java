@@ -37,4 +37,5 @@ public class CourseDao {
         return courseMapper.getSubjectByIdx(subject_idx);
     }
 
+
 }

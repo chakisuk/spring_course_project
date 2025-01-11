@@ -28,7 +28,6 @@ public class CourseService {
     public List<Subject> getAllCourses() {
         return courseDao.getAllCourses();
     }
-
     public Subject getSubjectByIdx(int subject_idx) {
         return courseDao.getSubjectByIdx(subject_idx);
     }

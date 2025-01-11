@@ -5,40 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9c757545-ea6b-4224-b23b-9db75ce3bf29" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/add_fail.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/logout.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/Catalina/localhost/Spring1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/catalina.2025-01-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/host-manager.2025-01-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/localhost.2025-01-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/localhost_access_log.2025-01-10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/manager.2025-01-10.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Subject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/Subject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/beans/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/beans/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/config/RootAppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/config/RootAppContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/config/ServletAppContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/config/ServletAppContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/config/SpringConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/config/SpringConfigClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/HomeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/SubjectController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/MainController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/dao/CourseDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/SubjectDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/dao/UserDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/CourseMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/mapper/subjectMapper.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/service/CourseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/SubjectService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/kr/bit/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/kr/bit/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/error.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/properties/error.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/main.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login_success.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/user/login_success.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,27 +65,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Smart Tomcat.course_project.executor": "Run",
-    "Smart Tomcat.이름이 지정되지 않았습니다.executor": "Run",
-    "git-widget-placeholder": "juyoung",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/spring_course_project/src/main/webapp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Smart Tomcat.course_project.executor&quot;: &quot;Run&quot;,
+    &quot;Smart Tomcat.이름이 지정되지 않았습니다.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;juyoung&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/spring_course_project/src/main/webapp&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="kr.bit.config" />
@@ -162,6 +143,7 @@
       <workItem from="1736498371735" duration="8809000" />
       <workItem from="1736559477931" duration="277000" />
       <workItem from="1736559968652" duration="5259000" />
+      <workItem from="1736565255530" duration="10088000" />
     </task>
     <servers />
   </component>

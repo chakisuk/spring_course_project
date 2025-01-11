@@ -33,4 +33,5 @@ public interface CourseMapper {
     @Select("SELECT * FROM subject_table WHERE subject_idx = #{subject_idx}")
     Subject getSubjectByIdx(int subject_idx);
 
+
 }

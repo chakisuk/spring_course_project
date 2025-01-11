@@ -7,8 +7,19 @@
     <meta charset="UTF-8">
     <title>수강신청</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <style>
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
 </head>
 <body>
+
+<div class="logout-btn">
+    <a href="${root}user/logout" class="btn btn-danger">로그아웃</a>
+</div>
 
 <div class="container mt-4">
     <div class="card">
