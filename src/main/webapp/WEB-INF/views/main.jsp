@@ -57,12 +57,26 @@
                             </c:forEach>
 
                             <c:choose>
+                                <%-- 신청된 경우 --%>
                                 <c:when test="${isEnrolled}">
-                                    <button class="btn btn-secondary" disabled>신청</button>
+                                    <c:choose>
+                                        <%-- 신청된 과목이 인원 마감인 경우 --%>
+                                        <c:when test="${subject.subject_num >= 20}">
+                                            <button class="btn btn-secondary" disabled>인원마감</button>
+                                        </c:when>
+                                        <%-- 신청된 과목이 인원 마감이 아닌 경우 --%>
+                                        <c:otherwise>
+                                            <button class="btn btn-secondary" disabled>신청</button>
+                                        </c:otherwise>
+                                    </c:choose>
                                 </c:when>
+
+                                <%-- 아직 신청하지 않았고 인원이 남은 경우 --%>
                                 <c:when test="${subject.subject_num < 20}">
                                     <a class="btn btn-primary" href="${root}add?subject_idx=${subject.subject_idx}&user_idx=${param.user_idx}">신청</a>
                                 </c:when>
+
+                                <%-- 아직 신청하지 않았고 인원 마감인 경우 --%>
                                 <c:otherwise>
                                     <button class="btn btn-secondary" disabled>인원마감</button>
                                 </c:otherwise>
